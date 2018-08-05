@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbars"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin_left"
+                android:layout_marginLeft="@dimen/card_margin_left"
+                android:layout_marginRight="@dimen/card_margin_left"
+                android:layout_marginTop="@dimen/card_margin_left"
+                app:cardBackgroundColor="@color/putih"
+                app:contentPadding="@dimen/contentpaddingcard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kartustat_status_perangkat"
+                        android:textSize="@dimen/ukuran16sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/abubayangan"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kartustat_kondisigps"
+                        android:textSize="@dimen/ukuran16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/teks_status_kondisi_gps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kartustat_belumaktif"
+                        android:textSize="@dimen/ukuran15sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/kartustat_sambungan_internet"
+                        android:textSize="@dimen/ukuran16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/teks_status_kondisi_internet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kartustat_belumaktif"
+                        android:textSize="@dimen/ukuran15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/kartustat_lokasipengguna"
+                        android:textSize="@dimen/ukuran15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/teks_status_kondisi_lokasipengguna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kartustat_lokasipengguna_belumtersedia"
+                        android:textSize="@dimen/ukuran14sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:background="@color/abubayangan"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/tombol_setelan_perangkat"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kartustat_tekstombol_setelan"
+                            android:textColor="@color/color_teks_button"
+                            android:textSize="@dimen/ukuran14sp"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/tombol_ukur_kecepatan"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kartustat_tekstombol_ukurkecepatan"
+                            android:textColor="@color/color_teks_button"
+                            android:textSize="@dimen/ukuran14sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <include layout="@layout/incl_mainmenu_settingcard"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

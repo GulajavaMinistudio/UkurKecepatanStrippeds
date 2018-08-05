@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_kecepatankph"
+        android:icon="@drawable/ic_car_mph"
+        android:title="@string/teks_bottom_menu_kph"/>
+
+    <item
+        android:id="@+id/nav_kecepatanmph"
+        android:icon="@drawable/ic_planes"
+        android:title="@string/teks_bottom_menu_mph"/>
+
+    <item
+        android:id="@+id/nav_kecepatanknot"
+        android:icon="@drawable/ic_ships"
+        android:title="@string/teks_bottom_menu_knot"/>
+
+</menu>

@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeCompat" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:windowBackground">@color/putihabu</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppThemeCompat.Home" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:windowBackground">@color/putih</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+
+    </style>
+
+    <!-- STYLE UNTUK GAYA TEKS JUDUL  -->
+    <style name="AppTheme.ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/putih</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ukuran16sp</item>
+    </style>
+
+
+    <!-- STYLE UNTUK GAYA TEKS SUBJUDUL -->
+    <style name="AppTheme.ActionBar.subtitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/putih</item>
+        <item name="android:textSize">@dimen/ukuran15sp</item>
+    </style>
+
+
+</resources>

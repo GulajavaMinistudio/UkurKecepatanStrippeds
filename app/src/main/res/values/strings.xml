@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Ukur Kecepatan</string>
+    <string name="app_name_sub">Kendaraan Bermotor</string>
+
+    <string name="menu_bantuan_aplikasi">Bantuan</string>
+    <string name="menu_tutup_dialog">Tutup</string>
+    <string name="menu_tentang_aplikasi">Tentang Aplikasi</string>
+
+    <!--HALAMAN UTAMA KARTU STATUS PERANGKAT-->
+    <string name="kartustat_status_perangkat">Status Perangkat</string>
+    <string name="kartustat_kondisigps">Kondisi GPS Perangkat</string>
+    <string name="kartustat_sambungan_internet">Kondisi Sambungan Internet Perangkat</string>
+    <string name="kartustat_lokasipengguna">Lokasi Pengguna</string>
+    <string name="kartustat_lokasipengguna_belumtersedia">BELUM TERSEDIA</string>
+    <string name="kartustat_sudahaktif">SUDAH AKTIF</string>
+    <string name="kartustat_belumaktif">BELUM AKTIF</string>
+    <string name="kartustat_tekstombol_setelan">SETELAN PERANGKAT</string>
+    <string name="kartustat_tekstombol_ukurkecepatan">UKUR KECEPATAN</string>
+    <string name="toast_gagal_gps_internet_nonaktif">Aktifkan koneksi lokasi GPS dan koneksi internet perangkat sebelum memulai pengukuran kecepatan</string>
+
+    <!-- HALAMAN UTAMA KARTU SETELAN APLIKASI -->
+    <string name="kartusetel_judul">Setelan Aplikasi</string>
+    <string name="kartusetel_keterangan">Setelan untuk mengubah batas kecepatan maksimum yang diperbolehkan oleh aplikasi. Jika kendaraan melebihi batas kecepatan maksimum aplikasi ini, maka akan muncul sebuah notifikasi.</string>
+    <string name="kartusetel_tekstombol_setelanapp">SETELAN APLIKASI</string>
+
+    <!-- HALAMAN SETELAN APLIKASI -->
+    <string name="judul_kartu_setelbatas">Setelan Batas Kecepatan</string>
+    <string name="hint_batas_kecepatan">nilai batas kecepatan</string>
+    <string name="teks_tombol_simpansetelan">SIMPAN SETELAN</string>
+    <string name="bantuanhelpbataskmh">Masukkan batas kecepatan dalam km/jam. Nilai yang diperbolehkan adalah antara 10 km/jam sampai dengan 110 km/jam.</string>
+    <string name="bantuanhelpbatasmph">Masukkan batas kecepatan dalam mil/jam. Nilai yang diperbolehkan adalah antara 6 mil/jam sampai dengan 68 mil/jam.</string>
+    <string name="bantuanhelpbatasknot">Masukkan batas kecepatan dalam knot. Nilai yang diperbolehkan adalah antara 5 knot sampai dengan 64 knot.</string>
+    <string name="toast_gagal_simpan_setelan">Gagal menyimpan setelan aplikasi</string>
+    <string name="toast_gagal_ambil_setelan">Gagal mengambil setelan aplikasi</string>
+    <string name="toast_ok_simpansetelan">Setelan batas kecepatan telah disimpan</string>
+
+    <string name="teks_bantuan_setelan_kecepatan">Setel batas kecepatan maksimum yang diperbolehkan oleh pengukuran aplikasi. Jika kecepatan kendaraan melebihi batas maksimum, maka aplikasi akan menampilkan notifikasi peringatan.</string>
+
+    <string name="promp_spin_tipekecepatan">Tipe Kecepatan</string>
+
+    <string name="toast_gagal_setelan_nilaikecepatan">Masukkan batas kecepatan dengan benar</string>
+    <string name="toast_gagal_setelan_nilaikecepatan_kmh">Masukkan batas kecepatan antara 10 km/jam sampai dengan 110 km/jam</string>
+    <string name="toast_gagal_setelan_nilaikecepatan_mph">Masukkan batas kecepatan antara 6 mil/jam sampai dengan 68 mil/jam</string>
+    <string name="toast_gagal_setelan_nilaikecepatan_knot">Masukkan batas kecepatan antara 5 knot sampai dengan 64 knot</string>
+    <string name="toast_gagal_setelan_satuankecepatan">Masukkan jenis satuan kecepatan untuk batas kecepatan dengan benar</string>
+
+
+    <string name="teks_bottom_menu_kph">KPH</string>
+    <string name="teks_bottom_menu_mph">MPH</string>
+    <string name="teks_bottom_menu_knot">KNOT</string>
+
+    <string-array name="array_jeniskecepatan">
+        <item>km/jam</item>
+        <item>mil/jam</item>
+        <item>knot</item>
+    </string-array>
+
+
+    <!-- TOAST LOKASI STASIUN PERMISSION -->
+    <string name="teks_ok">OK</string>
+    <string name="teks_batal">BATAL</string>
+    <string name="teks_isimintalokasi">Aplikasi memerlukan akses lokasi dari perangkat untuk mengambil koordinat lokasi GPS</string>
+    <string name="teks_isimintalokasirasional">Aplikasi memerlukan akses lokasi dari perangkat untuk mengambil koordinat lokasi GPS dan kecepatan kendaraan anda.</string>
+    <string name="toastdialog_pesangagalgps">Layanan lokasi seluler dan lokasi GPS tidak tersedia, sehingga pengambilan lokasi gagal.</string>
+    <string name="teks_setelanlokasi">SETELAN LOKASI</string>
+    <string name="teks_setelan_perangkat">SETELAN</string>
+    <string name="teks_setelaninternet">SETELAN INTERNET</string>
+    <string name="toast_permisi_setelan_perangkat">Setelan Perangkat</string>
+    <string name="toast_setelanlokasi_gagal">Setelan lokasi tidak mencukupi dan tidak dapat disetel disini, Silahkan lakukan penyetelan lokasi melalui setelan di perangkat anda.</string>
+
+
+    <!-- HALAMAN PENGHITUNG KECEPATAN -->
+    <string name="teks_judul_hitungkecepatan">Pengukur Kecepatan</string>
+    <string name="teks_judul_hitungkecepatan_sub">Kendaraan Bermotor yang Dinaiki</string>
+    <string name="toast_gagal_dbsetelan_hitungkecepatan">Gagal mengambil setelan batas kecepatan</string>
+
+    <!-- FRAGMENT PENGHITUNG KECEPATAN -->
+    <string name="teks_grafik_kecepatan">Grafik Kecepatan</string>
+    <string name="teks_grafik_status_kecepatan">Status Kecepatan</string>
+    <string name="teks_grafik_lokasi_pengguna">Lokasi Pengguna</string>
+    <string name="teks_batas_kecepatan_aman">AMAN</string>
+    <string name="teks_batas_kecepatan_waspada">WASPADA BAHAYA</string>
+    <string name="toast_gagal_tampil_bataskecepatan">Gagal menampilkan kecepatan kendaraan saat ini</string>
+
+
+    <!-- NOTIFIKASI PENGHITUNG KECEPATAN -->
+    <string name="teks_notif_judul_pesan_batas_kecepatan">Pengingat Batas Kecepatan</string>
+    <string name="teks_notif_pesan_bataskecepatan">Kecepatan kendaraan anda telah melebihi batas yang ditentukan aplikasi</string>
+
+    <!-- HALAMAN BANTUAN PENGUKUR KECEPATAN -->
+    <string name="bantuan_pengukur_judul">Bantuan Pengukur Kecepatan</string>
+    <string name="bantuan_pengukur1">Aktifkan koneksi internet dan koneksi lokasi GPS di perangkat anda agar aplikasi dapat menghitung kecepatan pergerakan anda berdasarkan perubahan lokasi.</string>
+    <string name="bantuan_pengukur2">Sentuh tombol navigasi KPH, MPH, atau KNOT untuk berpindah-pindah ke sub halaman lain dengan satuan kecepatan berbeda</string>
+    <string name="bantuan_pengukur3">Anda dapat juga melakukan sentuhan geser ke kanan atau ke kiri untuk navigasi antar sub halaman nilai kecepatan yang berbeda.</string>
+
+
+</resources>

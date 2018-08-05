@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_bantuan"
+        android:title="@string/menu_bantuan_aplikasi"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_tentang_app"
+        android:title="@string/menu_tentang_aplikasi"
+        app:showAsAction="never"/>
+
+</menu>

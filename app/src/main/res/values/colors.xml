@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5cc1b3</color>
+    <color name="colorPrimaryDark">#5cc1b3</color>
+    <color name="colorAccent">#fc6b3f</color>
+
+    <!-- WARNATEKS -->
+    <color name="abubayangan">#dbdbdb</color>
+    <color name="warnateksjudul">#5d5d5d</color>
+    <color name="warnatekssubjudul">#989898</color>
+
+    <color name="transparan">#00000000</color>
+    <color name="putih">#ffffff</color>
+    <color name="putihabu">#f2f2f2</color>
+
+    <!--TEKS TAB-->
+    <color name="putih_transparan_tab">#80ffffff</color>
+
+    <color name="orange_900">#FF7043</color>
+    <color name="orange_indicator">#FFB300</color>
+
+    <color name="latar_spinner">#ECEFF1</color>
+
+    <!-- latar belakang isian teks -->
+    <color name="abulatarspin">#ECEFF1</color>
+
+    <!-- selector navigation view -->
+    <color name="putih_nav_bottom">#ECEFF1</color>
+    <color name="putih_nav_bottom_transparan">#50ECEFF1</color>
+
+    <!-- latar belakang bar kecepatan -->
+    <color name = "abubgnow">#ededed</color>
+    <color name = "hijaunow">#669900</color>
+    <color name = "merahnow">#cc0000</color>
+    <color name = "biru_indikator">#0099cc</color>
+
+    <!-- TEMA WARNA BARU -->
+    <color name="color_icons">#5cc1b3</color>
+    <color name="color_teks_button">#08C299</color>
+
+
+</resources>

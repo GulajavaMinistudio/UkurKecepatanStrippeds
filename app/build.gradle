@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.objectbox'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "gulajava.speedcepat"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 10
+        versionName "2.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            zipAlignEnabled true
+        }
+        debug {
+            debuggable true
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
+        }
+    }
+    buildToolsVersion '27.0.3'
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-annotations:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    kapt 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1'
+    implementation('com.github.bumptech.glide:recyclerview-integration:4.7.1') {
+        // Excludes the support library because it's already included by Glide.
+        transitive = false
+    }
+
+    // database objectbox
+
+    // all below should be added automatically by the plugin
+    implementation "io.objectbox:objectbox-android:$objectboxVersion"
+    kapt "io.objectbox:objectbox-processor:$objectboxVersion"
+
+    // some useful Kotlin extension functions
+    implementation "io.objectbox:objectbox-kotlin:$objectboxVersion"
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // google play services
+    implementation 'com.google.android.gms:play-services-gcm:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+    // arch architecture
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$archcomponentVersion"
+    kapt "android.arch.lifecycle:compiler:$archcomponentVersion"
+    implementation "android.arch.lifecycle:runtime:$archcomponentVersion"
+
+    // easy permission
+    implementation 'pub.devrel:easypermissions:1.2.0'
+
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    // internet
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.14.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.amitshekhar.android:android-networking:1.0.1'
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.1'
+
+    // joda time
+    implementation 'joda-time:joda-time:2.9.9'
+}
+
+apply plugin: 'com.google.gms.google-services'
