@@ -18,4 +18,4 @@ Demo aplikasi Ukur Kecepatan yang telah ada di Google Play Store dengan basis ko
 
 [firebase-playservices]: <https://firebase.google.com/>
  [firebase-playservices-help]: <https://support.google.com/firebase/answer/7015592?hl=en/>
-[app-produksi]:<https://play.google.com/store/apps/details?id=gulajava.speedcepat/>
+[app-produksi]:<https://play.google.com/store/apps/details?id=gulajava.speedcepat>
